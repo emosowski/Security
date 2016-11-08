@@ -13,6 +13,14 @@
 		A1D2FBF71DD2206400F6BE9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FBF61DD2206400F6BE9B /* Assets.xcassets */; };
 		A1D2FBFA1DD2206400F6BE9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FBF81DD2206400F6BE9B /* LaunchScreen.storyboard */; };
 		A1D2FC021DD24F0800F6BE9B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */; };
+		A1D2FC1C1DD26DB100F6BE9B /* vodafoneexbd-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC141DD26DB100F6BE9B /* vodafoneexbd-webfont.ttf */; };
+		A1D2FC1D1DD26DB100F6BE9B /* VodafoneExBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC151DD26DB100F6BE9B /* VodafoneExBd.ttf */; };
+		A1D2FC1E1DD26DB100F6BE9B /* vodafonelt-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC161DD26DB100F6BE9B /* vodafonelt-webfont.ttf */; };
+		A1D2FC1F1DD26DB100F6BE9B /* VodafoneLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC171DD26DB100F6BE9B /* VodafoneLt.ttf */; };
+		A1D2FC201DD26DB100F6BE9B /* vodafonerg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC181DD26DB100F6BE9B /* vodafonerg-webfont.ttf */; };
+		A1D2FC211DD26DB100F6BE9B /* VodafoneRg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC191DD26DB100F6BE9B /* VodafoneRg.ttf */; };
+		A1D2FC221DD26DB100F6BE9B /* vodafonergbd-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC1A1DD26DB100F6BE9B /* vodafonergbd-webfont.ttf */; };
+		A1D2FC231DD26DB100F6BE9B /* VodafoneRgBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FC1B1DD26DB100F6BE9B /* VodafoneRgBd.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		A1D2FBF91DD2206400F6BE9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1D2FBFB1DD2206400F6BE9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A1D2FC141DD26DB100F6BE9B /* vodafoneexbd-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafoneexbd-webfont.ttf"; sourceTree = "<group>"; };
+		A1D2FC151DD26DB100F6BE9B /* VodafoneExBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneExBd.ttf; sourceTree = "<group>"; };
+		A1D2FC161DD26DB100F6BE9B /* vodafonelt-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafonelt-webfont.ttf"; sourceTree = "<group>"; };
+		A1D2FC171DD26DB100F6BE9B /* VodafoneLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneLt.ttf; sourceTree = "<group>"; };
+		A1D2FC181DD26DB100F6BE9B /* vodafonerg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafonerg-webfont.ttf"; sourceTree = "<group>"; };
+		A1D2FC191DD26DB100F6BE9B /* VodafoneRg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneRg.ttf; sourceTree = "<group>"; };
+		A1D2FC1A1DD26DB100F6BE9B /* vodafonergbd-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vodafonergbd-webfont.ttf"; sourceTree = "<group>"; };
+		A1D2FC1B1DD26DB100F6BE9B /* VodafoneRgBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneRgBd.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		A1D2FBEE1DD2206400F6BE9B /* Security App */ = {
 			isa = PBXGroup;
 			children = (
+				A1D2FC131DD26C7300F6BE9B /* Resources */,
 				A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */,
 				A1D2FBF11DD2206400F6BE9B /* ViewController.swift */,
 				A1D2FBF31DD2206400F6BE9B /* Main.storyboard */,
@@ -65,6 +82,21 @@
 				A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */,
 			);
 			path = "Security App";
+			sourceTree = "<group>";
+		};
+		A1D2FC131DD26C7300F6BE9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1D2FC141DD26DB100F6BE9B /* vodafoneexbd-webfont.ttf */,
+				A1D2FC151DD26DB100F6BE9B /* VodafoneExBd.ttf */,
+				A1D2FC161DD26DB100F6BE9B /* vodafonelt-webfont.ttf */,
+				A1D2FC171DD26DB100F6BE9B /* VodafoneLt.ttf */,
+				A1D2FC181DD26DB100F6BE9B /* vodafonerg-webfont.ttf */,
+				A1D2FC191DD26DB100F6BE9B /* VodafoneRg.ttf */,
+				A1D2FC1A1DD26DB100F6BE9B /* vodafonergbd-webfont.ttf */,
+				A1D2FC1B1DD26DB100F6BE9B /* VodafoneRgBd.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +159,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D2FBFA1DD2206400F6BE9B /* LaunchScreen.storyboard in Resources */,
+				A1D2FC1D1DD26DB100F6BE9B /* VodafoneExBd.ttf in Resources */,
 				A1D2FBF71DD2206400F6BE9B /* Assets.xcassets in Resources */,
 				A1D2FBF51DD2206400F6BE9B /* Main.storyboard in Resources */,
+				A1D2FC1E1DD26DB100F6BE9B /* vodafonelt-webfont.ttf in Resources */,
+				A1D2FC221DD26DB100F6BE9B /* vodafonergbd-webfont.ttf in Resources */,
+				A1D2FC1F1DD26DB100F6BE9B /* VodafoneLt.ttf in Resources */,
+				A1D2FC211DD26DB100F6BE9B /* VodafoneRg.ttf in Resources */,
+				A1D2FC1C1DD26DB100F6BE9B /* vodafoneexbd-webfont.ttf in Resources */,
+				A1D2FC201DD26DB100F6BE9B /* vodafonerg-webfont.ttf in Resources */,
+				A1D2FC231DD26DB100F6BE9B /* VodafoneRgBd.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

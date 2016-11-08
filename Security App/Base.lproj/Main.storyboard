@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mh8-T6-nN5">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="2352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="vodafoneexbd-webfont.ttf">
+            <string>VodafoneExB-Regular</string>
+            <string>VodafoneExB-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,22 +23,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
-                                <rect key="frame" x="247" y="344" width="107" height="30"/>
-                                <state key="normal" title="Location Safety"/>
-                                <connections>
-                                    <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
-                                <rect key="frame" x="258" y="225" width="84" height="30"/>
+                                <rect key="frame" x="163" y="224" width="198" height="94"/>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
                                 <state key="normal" title="5 MUST-DO"/>
                                 <connections>
                                     <segue destination="3lP-Ft-iA9" kind="show" id="k5x-ur-IRh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
+                                <rect key="frame" x="163" y="339" width="208" height="96"/>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
+                                <state key="normal" title="Location Safety"/>
+                                <connections>
+                                    <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cdp-Cq-gyo"/>
                     <connections>
@@ -54,12 +63,39 @@
                     <view key="view" contentMode="scaleToFill" id="7kL-oX-m21">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ij-IN-2DT">
+                                <rect key="frame" x="218" y="285" width="94" height="30"/>
+                                <state key="normal" title="New York, NY"/>
+                                <connections>
+                                    <segue destination="Q9S-IQ-Fuy" kind="show" id="XBn-cH-LDm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGR-Ab-9DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="-384"/>
+            <point key="canvasLocation" x="1916" y="664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Qq-6z-4UZ">
+            <objects>
+                <viewController id="Q9S-IQ-Fuy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BtN-Qt-Ttl"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAU-QC-a05"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xcq-Pt-vBl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nf-1E-lUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="664"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ddg-sM-TOB">
@@ -77,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLQ-ph-Xzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="711"/>
+            <point key="canvasLocation" x="1926" y="-65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CtW-3H-p4I">
