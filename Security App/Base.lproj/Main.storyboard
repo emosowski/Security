@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="vodafoneexbd-webfont.ttf">
+        <mutableArray key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
             <string>VodafoneExB-Regular</string>
         </mutableArray>
