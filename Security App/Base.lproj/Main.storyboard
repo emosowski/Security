@@ -8,6 +8,7 @@
         <mutableArray key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
             <string>VodafoneExB-Regular</string>
+            <string>VodafoneExB-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -23,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
                                 <rect key="frame" x="163" y="339" width="208" height="96"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
                                 <state key="normal" title="Location Safety"/>
@@ -34,7 +35,7 @@
                                     <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
                                 <rect key="frame" x="163" y="224" width="198" height="94"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
                                 <state key="normal" title="5 MUST-DO"/>
@@ -72,9 +73,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Cdp-Cq-gyo"/>
-                    <connections>
-                        <outlet property="fiveMustDos" destination="lC3-h9-tgS" id="fWo-ec-Q5X"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,25 +90,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ij-IN-2DT">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ij-IN-2DT">
                                 <rect key="frame" x="218" y="285" width="94" height="30"/>
-                                <state key="normal" title="New York, NY"/>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="15"/>
+                                <state key="normal" title="New York, NY">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="153" y="385" width="94" height="30"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="Q9S-IQ-Fuy" kind="show" id="XBn-cH-LDm"/>
+                                    <segue destination="3BD-po-H5h" kind="show" id="qTS-T9-oP7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ij-IN-2DT" firstAttribute="centerY" secondItem="7kL-oX-m21" secondAttribute="centerY" id="ATD-RB-u3Z"/>
+                            <constraint firstItem="9ij-IN-2DT" firstAttribute="centerX" secondItem="7kL-oX-m21" secondAttribute="centerX" id="ji5-My-5NV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ATD-RB-u3Z"/>
+                                <exclude reference="ji5-My-5NV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ATD-RB-u3Z"/>
+                                <include reference="ji5-My-5NV"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGR-Ab-9DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1916" y="664"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="8Qq-6z-4UZ">
             <objects>
-                <viewController id="Q9S-IQ-Fuy" sceneMemberID="viewController">
+                <viewController id="Q9S-IQ-Fuy" customClass="MapViewController" customModule="Security_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BtN-Qt-Ttl"/>
                         <viewControllerLayoutGuide type="bottom" id="uAU-QC-a05"/>
@@ -118,12 +138,72 @@
                     <view key="view" contentMode="scaleToFill" id="xcq-Pt-vBl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-V3-X0v">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="219" width="240" height="128"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ku0-V3-X0v"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ku0-V3-X0v"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ku0-V3-X0v" id="hV4-ei-hG2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nf-1E-lUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2628" y="664"/>
+            <point key="canvasLocation" x="3561" y="255.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IiB-zL-dDg">
+            <objects>
+                <viewController id="3BD-po-H5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oSj-Ht-NqG"/>
+                        <viewControllerLayoutGuide type="bottom" id="3k9-Gy-55s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mxh-Wm-gxE">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44F-rW-pEo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Emergency Evacuation Plan"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="105" y="376" width="190" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Q9S-IQ-Fuy" kind="show" id="YZt-Bb-jwT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="44F-rW-pEo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="44F-rW-pEo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMS-Ko-5Ox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="667.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ddg-sM-TOB">

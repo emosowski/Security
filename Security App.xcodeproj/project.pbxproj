@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14011861DDF9253002D0D28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14011851DDF9253002D0D28 /* MapViewController.swift */; };
 		A1D2FBF01DD2206400F6BE9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */; };
 		A1D2FBF21DD2206400F6BE9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2FBF11DD2206400F6BE9B /* ViewController.swift */; };
 		A1D2FBF51DD2206400F6BE9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FBF31DD2206400F6BE9B /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A14011851DDF9253002D0D28 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A1D2FBEC1DD2206400F6BE9B /* Security App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Security App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1D2FBF11DD2206400F6BE9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				A1D2FBF81DD2206400F6BE9B /* LaunchScreen.storyboard */,
 				A1D2FBFB1DD2206400F6BE9B /* Info.plist */,
 				A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */,
+				A14011851DDF9253002D0D28 /* MapViewController.swift */,
 			);
 			path = "Security App";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				A1D2FC021DD24F0800F6BE9B /* SecondViewController.swift in Sources */,
 				A1D2FBF21DD2206400F6BE9B /* ViewController.swift in Sources */,
 				A1D2FBF01DD2206400F6BE9B /* AppDelegate.swift in Sources */,
+				A14011861DDF9253002D0D28 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +341,7 @@
 				A1D2FC001DD2206400F6BE9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
