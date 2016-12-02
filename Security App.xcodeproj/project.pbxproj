@@ -135,6 +135,7 @@
 					A1D2FBEB1DD2206400F6BE9B = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = K2L4T5WD2L;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -305,6 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -319,6 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
