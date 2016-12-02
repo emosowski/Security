@@ -160,7 +160,7 @@
         <!--Location-->
         <scene sceneID="QJb-p9-klL">
             <objects>
-                <viewController id="lpW-s2-X1c" sceneMemberID="viewController">
+                <viewController id="lpW-s2-X1c" customClass="newyorkMapViewViewController" customModule="Security_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X0X-Ut-NWq"/>
                         <viewControllerLayoutGuide type="bottom" id="Prc-7w-cb3"/>
@@ -169,18 +169,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-V3-X0v">
-                                <rect key="frame" x="87" y="243" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-V3-X0v">
+                                <rect key="frame" x="0.0" y="64" width="375" height="221"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" id="3ph-NN-ELk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ku0-V3-X0v" secondAttribute="trailing" id="Edk-tW-Sck"/>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leading" id="SyK-Ty-6dQ"/>
+                            <constraint firstItem="Prc-7w-cb3" firstAttribute="top" secondItem="Ku0-V3-X0v" secondAttribute="bottom" constant="333" id="rYJ-d3-5Z8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" id="2SO-kL-OQh"/>
+                    <connections>
+                        <outlet property="nyMapView" destination="Ku0-V3-X0v" id="e8h-bs-Dh7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWn-6s-zC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="30"/>
+            <point key="canvasLocation" x="3908" y="29.23538230884558"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fJs-zm-A1S">
@@ -205,7 +213,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mh8-T6-nN5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJg-ma-bJa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cJg-ma-bJa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
