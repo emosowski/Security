@@ -13,11 +13,13 @@ class newyorkMapViewViewController: UIViewController {
 
     @IBOutlet weak var nyMapView: MKMapView!
     
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 500
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         nyMapView.setRegion(coordinateRegion, animated: true)
+        
+    
     }
     override func viewDidLoad() {
         super.viewDidLoad()
