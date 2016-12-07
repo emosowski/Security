@@ -12,6 +12,9 @@
         <array key="vodafoneexbd-webfont.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
+        <array key="vodafonerg-webfont.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -28,7 +31,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
                                 <rect key="frame" x="163" y="339" width="208" height="96"/>
-                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="30"/>
                                 <state key="normal" title="Location Safety"/>
                                 <connections>
                                     <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
@@ -36,7 +39,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
                                 <rect key="frame" x="163" y="224" width="198" height="94"/>
-                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="30"/>
                                 <state key="normal" title="5 MUST-DO"/>
                                 <connections>
                                     <segue destination="3lP-Ft-iA9" kind="show" id="k5x-ur-IRh"/>
@@ -138,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="1926" y="-65"/>
         </scene>
-        <!--Contact-->
+        <!--Info-->
         <scene sceneID="CK6-hD-bTv">
             <objects>
-                <viewController id="WkP-lg-RCy" sceneMemberID="viewController">
+                <viewController id="WkP-lg-RCy" customClass="NyContactViewController" customModule="Security_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hsp-tI-cGK"/>
                         <viewControllerLayoutGuide type="bottom" id="7OQ-Ew-tEU"/>
@@ -149,13 +152,59 @@
                     <view key="view" contentMode="scaleToFill" id="jdH-34-O9Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-th-q0P">
+                                <rect key="frame" x="127" y="214" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <state key="normal" title="Office Number">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="HelpDeskCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="sLs-VW-p9C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khH-Jx-Fe2">
+                                <rect key="frame" x="127" y="289" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <state key="normal" title="Help Desk">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpDeskCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="Tsp-SA-bbb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbx-S2-evl">
+                                <rect key="frame" x="127" y="252" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <state key="normal" title="International SOS">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SOScall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="1Gd-6Y-Hl4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-ek-RyL">
+                                <rect key="frame" x="133" y="327" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                <state key="normal" title="Evacuation Plan">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="evacuationPlan:" destination="WkP-lg-RCy" eventType="touchUpInside" id="mqn-JA-5fH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact" id="lRi-vI-OeK"/>
+                    <tabBarItem key="tabBarItem" title="Info" id="lRi-vI-OeK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzs-cx-5vB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3934" y="912"/>
+            <point key="canvasLocation" x="3933.5999999999999" y="911.69415292353835"/>
         </scene>
         <!--Location-->
         <scene sceneID="QJb-p9-klL">
@@ -202,11 +251,31 @@
                     <connections>
                         <segue destination="lpW-s2-X1c" kind="relationship" relationship="viewControllers" id="QwK-gm-UWC"/>
                         <segue destination="WkP-lg-RCy" kind="relationship" relationship="viewControllers" id="a2h-or-GYg"/>
+                        <segue destination="Xrx-yf-zYc" kind="relationship" relationship="viewControllers" id="Ugy-K4-hbo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdO-t6-kS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2679" y="663"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="O7H-QV-337">
+            <objects>
+                <viewController id="Xrx-yf-zYc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ec8-Yj-LYV"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ob-8C-bFg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54T-Gz-N9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2YC-f6-8jo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaR-RB-YiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2886" y="1343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CtW-3H-p4I">

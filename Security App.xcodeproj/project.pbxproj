@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6806C1391DF1D46E0083CF4E /* newyorkMapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */; };
+		6806C13B1DF5F7040083CF4E /* NyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */; };
 		A1D2FBF01DD2206400F6BE9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */; };
 		A1D2FBF21DD2206400F6BE9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2FBF11DD2206400F6BE9B /* ViewController.swift */; };
 		A1D2FBF51DD2206400F6BE9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D2FBF31DD2206400F6BE9B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newyorkMapViewViewController.swift; sourceTree = "<group>"; };
+		6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyContactViewController.swift; sourceTree = "<group>"; };
 		A1D2FBEC1DD2206400F6BE9B /* Security App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Security App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1D2FBF11DD2206400F6BE9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */,
 				A1D2FBF11DD2206400F6BE9B /* ViewController.swift */,
 				A1D2FBF31DD2206400F6BE9B /* Main.storyboard */,
+				6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */,
 				6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */,
 				A1D2FBF61DD2206400F6BE9B /* Assets.xcassets */,
 				A1D2FBF81DD2206400F6BE9B /* LaunchScreen.storyboard */,
@@ -134,7 +137,7 @@
 				TargetAttributes = {
 					A1D2FBEB1DD2206400F6BE9B = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = K2L4T5WD2L;
+						DevelopmentTeam = UPPW6H3298;
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6806C13B1DF5F7040083CF4E /* NyContactViewController.swift in Sources */,
 				A1D2FC021DD24F0800F6BE9B /* SecondViewController.swift in Sources */,
 				A1D2FBF21DD2206400F6BE9B /* ViewController.swift in Sources */,
 				A1D2FBF01DD2206400F6BE9B /* AppDelegate.swift in Sources */,
@@ -301,9 +305,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UPPW6H3298;
 				INFOPLIST_FILE = "Security App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -316,9 +321,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UPPW6H3298;
 				INFOPLIST_FILE = "Security App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
