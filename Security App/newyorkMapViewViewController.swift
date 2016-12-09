@@ -9,34 +9,78 @@
 import UIKit
 import MapKit
 
-class newyorkMapViewViewController: UIViewController {
+class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
 
-    @IBOutlet weak var nyMapView: MKMapView!
+    
+    @IBOutlet weak var mapView: MKMapView!
     
     let regionRadius: CLLocationDistance = 500
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        nyMapView.setRegion(coordinateRegion, animated: true)
-        
     
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let initialLocation = CLLocation(latitude: 40.756679, longitude: -73.972411)
+        centerMapOnLocation(initialLocation)
         
-        centerMapOnLocation(location: initialLocation)
+        mapView.delegate = self
+        
+        let location = Location(title: "Vodafone New York",
+                              locationName: "560 Lexington Avenue",
+                              discipline: "Office",
+                              coordinate: CLLocationCoordinate2D(latitude: 40.756679, longitude: -73.972411))
+        
+        
+        mapView.addAnnotation(location)
+        
+//        
+//        let location = CLLocationCoordinate2D( latitude: 40.756679, longitude: -73.972411)
+//        let annotation = MKPointAnnotation()
+//        annotation.coordinate = location
+//        annotation.title = "Big Ben"
+//        annotation.subtitle = "London"
+//        
+//        mapView.addAnnotation(annotation)
+//        mapView.showAnnotations([annotation], animated: true)
+//        mapView.delegate = self
+        
+
+    }
+    
+    func mapView(_ mapView: MKMapView,
+                 viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if let annotation = annotation as? Location {
+            let identifier = "artPin"
+            var view: MKPinAnnotationView
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+                as? MKPinAnnotationView { // 2
+                dequeuedView.annotation = annotation
+                view = dequeuedView
+            } else {
+                // 3
+                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
+            }
+            
+//            view.pinTintColor = annotation.pinTintColor()
+            return view
+        }
+        return nil
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! Location
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+    }
+    
+    
+    func centerMapOnLocation(_ location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

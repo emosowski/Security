@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="vodafoneexbd-webfont.ttf">
+        <array key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
-        <array key="vodafonerg-webfont.ttf">
+        <array key="VodafoneRg.ttf">
             <string>VodafoneRg-Regular</string>
         </array>
     </customFonts>
@@ -220,6 +220,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-V3-X0v">
                                 <rect key="frame" x="0.0" y="64" width="375" height="221"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lpW-s2-X1c" id="yEO-81-GhR"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -232,7 +235,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" id="2SO-kL-OQh"/>
                     <connections>
-                        <outlet property="nyMapView" destination="Ku0-V3-X0v" id="e8h-bs-Dh7"/>
+                        <outlet property="mapView" destination="Ku0-V3-X0v" id="gj9-gF-eyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWn-6s-zC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
