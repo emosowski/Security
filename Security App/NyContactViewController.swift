@@ -9,6 +9,8 @@
 import UIKit
 
 class NyContactViewController: UIViewController {
+    
+    
 
     @IBAction func HelpDeskCall(_ sender: Any) {
         
@@ -21,7 +23,7 @@ class NyContactViewController: UIViewController {
     
     }
     @IBAction func SOScall(_ sender: Any) {
-        let number = URL(string: "telprompt://123456789")!
+        let number = URL(string: "telprompt://40402087628021")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(number, options: [:], completionHandler: nil)
         } else {
@@ -39,12 +41,7 @@ class NyContactViewController: UIViewController {
     }
     
     @IBAction func evacuationPlan(_ sender: Any) {
-        let number = URL(string: "telprompt://123456789")!
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(number, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(number)
-        }
+
     }
     
     override func viewDidLoad() {
@@ -59,14 +56,5 @@ class NyContactViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
