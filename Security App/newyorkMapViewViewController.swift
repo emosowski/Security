@@ -14,7 +14,7 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    let regionRadius: CLLocationDistance = 500
+    let regionRadius: CLLocationDistance = 1000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +32,10 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
         
         mapView.addAnnotation(location)
         
-//        
-//        let location = CLLocationCoordinate2D( latitude: 40.756679, longitude: -73.972411)
-//        let annotation = MKPointAnnotation()
-//        annotation.coordinate = location
-//        annotation.title = "Big Ben"
-//        annotation.subtitle = "London"
-//        
-//        mapView.addAnnotation(annotation)
-//        mapView.showAnnotations([annotation], animated: true)
-//        mapView.delegate = self
+        let yourAnnotationAtIndex = 0
+        mapView.selectAnnotation(mapView.annotations[yourAnnotationAtIndex], animated: true)
+        //automatically displays annotation info without tap
+        
         
 
     }
@@ -63,7 +57,6 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
                 view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
             }
             
-//            view.pinTintColor = annotation.pinTintColor()
             return view
         }
         return nil

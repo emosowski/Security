@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Security App/newyorkMapViewViewController.swift"
-            timestampString = "503006823.183671"
+            timestampString = "503333038.130417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "newyorkMapViewViewController"
             landmarkType = "3">
          </BreakpointContent>

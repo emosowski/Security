@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class NyContactViewController: UIViewController {
+class NyContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     
 
@@ -32,13 +33,29 @@ class NyContactViewController: UIViewController {
     }
     
     @IBAction func helpDeskCall(_ sender: Any) {
-        let number = URL(string: "telprompt://123456789")!
+        let number = URL(string: "telprompt://18667729350")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(number, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(number)
         }
     }
+    
+    @IBAction func helpDeskEmail(_ sender: Any) {
+        
+        let mailVC = MFMailComposeViewController()
+        mailVC.mailComposeDelegate = self
+        mailVC.setToRecipients(["emily.osowski@vodafone.com"])
+        mailVC.setSubject("")
+        mailVC.setMessageBody("", isHTML: false)
+        
+        present(mailVC, animated: true, completion: nil)
+        
+
+    }
+
+    
+    
     
     @IBAction func evacuationPlan(_ sender: Any) {
 
@@ -54,6 +71,13 @@ class NyContactViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        // Dismiss the mail compose view controller.
+        controller.dismiss(animated: true, completion: nil)
+    }
+
     
 
 

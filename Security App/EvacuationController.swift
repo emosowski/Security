@@ -19,10 +19,13 @@ class EvacuationController: UIViewController {
         
         if let pdf = Bundle.main.url(forResource: "NYEvacPlan", withExtension: "pdf", subdirectory: nil, localization: nil)  {
                 let req = NSURLRequest(url: pdf)
-                let webView = UIWebView(frame: CGRect(0,60,self.view.frame.size.width-0,self.view.frame.size.height-10))
+                let webView = UIWebView(frame: CGRect(0,60,self.view.frame.size.width-0,self.view.frame.size.height-0))
                 webView.loadRequest(req as URLRequest)
                 self.view.addSubview(webView)
+            webView.scalesPageToFit = true
             }
+    
+        
         }
     
     
