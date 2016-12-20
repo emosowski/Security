@@ -36,6 +36,9 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
         mapView.selectAnnotation(mapView.annotations[yourAnnotationAtIndex], animated: true)
         //automatically displays annotation info without tap
         
+        let weather = WeatherGetter()
+        weather.getWeather("Tampa")
+        
         
 
     }
