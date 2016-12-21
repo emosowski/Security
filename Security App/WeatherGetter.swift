@@ -8,21 +8,27 @@
 
 import Foundation
 
+protocol WeatherGetterDelegate {
+    func didGetWeather(weather: Weather)
+    func didNotGetWeather(error: NSError)
+}
+
+
 class WeatherGetter {
     
     fileprivate let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather"
     fileprivate let openWeatherMapAPIKey = "cc0f2053f612b7d277bde4fecd2861c3"
     
-    func getWeather(_ city: String) {
+    func getWeather(city: String) {
         
         // This is a pretty simple networking task, so the shared session will do.
         let session = URLSession.shared
         
-        let weatherRequestURL = URL(string: "\(openWeatherMapBaseURL)?APPID=\(openWeatherMapAPIKey)&q=\(city)")!
+        let weatherRequestURL = NSURL(string: "\(openWeatherMapBaseURL)?APPID=\(openWeatherMapAPIKey)&q=\(city)")!
         
         // The data task retrieves the data.
-        let dataTask = session.dataTask(with: weatherRequestURL, completionHandler: {
-            (data: Data?, response: URLResponse?, error: NSError?) in
+        let dataTask = session.dataTask(with: weatherRequestURL as URL) {
+            (data, response, error) -> Void in
             if let error = error {
                 // Case 1: Error
                 // We got some kind of error while trying to get data from the server.
@@ -33,9 +39,7 @@ class WeatherGetter {
                 // We got a response from the server!
                 do {
                     // Try to convert that data into a Swift dictionary
-                    let weather = try JSONSerialization.jsonObject(
-                        with: data!,
-                        options: .mutableContainers) as! [String:[AnyObject]]
+                    let weather = try JSONSerialization.jsonObject(with: data! as Data, options: .allowFragments) as! Dictionary<String, AnyObject>
                     
                     // If we made it to this point, we've successfully converted the
                     // JSON-formatted weather data into a Swift dictionary.
@@ -50,7 +54,7 @@ class WeatherGetter {
 //                    print("Weather main: \(weather["weather"]![0]!["main"]!!)")
 //                    print("Weather description: \(weather["weather"]![0]!["description"]!!)")
 //                    print("Weather icon ID: \(weather["weather"]![0]!["icon"]!!)")
-                    
+//                    
                     print("Temperature: \(weather["main"]!["temp"]!!)")
                     print("Humidity: \(weather["main"]!["humidity"]!!)")
                     print("Pressure: \(weather["main"]!["pressure"]!!)")
@@ -69,7 +73,7 @@ class WeatherGetter {
                     print("JSON error description: \(jsonError.description)")
                 }
             }
-            } as! (Data?, URLResponse?, Error?) -> Void) 
+        }
         
         // The data task is set up...launch it!
         dataTask.resume()

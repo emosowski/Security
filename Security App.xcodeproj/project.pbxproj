@@ -11,6 +11,7 @@
 		6806C13B1DF5F7040083CF4E /* NyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */; };
 		6806C1431DF9CBCC0083CF4E /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6806C1421DF9CBCC0083CF4E /* VCMapView.swift */; };
 		68184A6A1E09BEF3003C1AD6 /* WeatherGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68184A691E09BEF3003C1AD6 /* WeatherGetter.swift */; };
+		68184A6C1E0AC552003C1AD6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68184A6B1E0AC552003C1AD6 /* Weather.swift */; };
 		688AB90A1DFB38D3009A9813 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688AB9091DFB38D3009A9813 /* Location.swift */; };
 		688AB90E1DFEF5AD009A9813 /* NYEvacPlan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 688AB90D1DFEF5AD009A9813 /* NYEvacPlan.pdf */; };
 		688AB9101DFF1B05009A9813 /* EvacuationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688AB90F1DFF1B05009A9813 /* EvacuationController.swift */; };
@@ -36,6 +37,7 @@
 		6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyContactViewController.swift; sourceTree = "<group>"; };
 		6806C1421DF9CBCC0083CF4E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		68184A691E09BEF3003C1AD6 /* WeatherGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherGetter.swift; sourceTree = "<group>"; };
+		68184A6B1E0AC552003C1AD6 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		688AB9091DFB38D3009A9813 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = ../Location.swift; sourceTree = "<group>"; };
 		688AB90D1DFEF5AD009A9813 /* NYEvacPlan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = NYEvacPlan.pdf; path = ../../../NYEvacPlan.pdf; sourceTree = "<group>"; };
 		688AB90F1DFF1B05009A9813 /* EvacuationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvacuationController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */,
 				6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */,
 				68184A691E09BEF3003C1AD6 /* WeatherGetter.swift */,
+				68184A6B1E0AC552003C1AD6 /* Weather.swift */,
 				688AB9091DFB38D3009A9813 /* Location.swift */,
 				6806C1421DF9CBCC0083CF4E /* VCMapView.swift */,
 				688AB90F1DFF1B05009A9813 /* EvacuationController.swift */,
@@ -208,6 +211,7 @@
 				688AB9101DFF1B05009A9813 /* EvacuationController.swift in Sources */,
 				68184A6A1E09BEF3003C1AD6 /* WeatherGetter.swift in Sources */,
 				688AB9121DFF3C77009A9813 /* Rect.swift in Sources */,
+				68184A6C1E0AC552003C1AD6 /* Weather.swift in Sources */,
 				6806C13B1DF5F7040083CF4E /* NyContactViewController.swift in Sources */,
 				A1D2FC021DD24F0800F6BE9B /* SecondViewController.swift in Sources */,
 				688AB90A1DFB38D3009A9813 /* Location.swift in Sources */,
