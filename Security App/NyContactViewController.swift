@@ -22,11 +22,11 @@ class NyContactViewController: UIViewController, MFMailComposeViewControllerDele
         } else {
             UIApplication.shared.openURL(number)
         }
-    
     }
     
+    
     @IBAction func sosCall(_ sender: Any) {
-
+        
         let number = URL(string: "telprompt://40402087628021")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(number, options: [:], completionHandler: nil)
@@ -35,9 +35,8 @@ class NyContactViewController: UIViewController, MFMailComposeViewControllerDele
         }
     }
     
-
-    @IBAction func serviceDeskCall(_ sender: Any) {
-
+    @IBAction func helpDeskCall(_ sender: Any) {
+        
         let number = URL(string: "telprompt://18667729350")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(number, options: [:], completionHandler: nil)
@@ -46,7 +45,6 @@ class NyContactViewController: UIViewController, MFMailComposeViewControllerDele
         }
     }
     
-
     @IBAction func helpDeskEmail(_ sender: Any) {
         
         let mailVC = MFMailComposeViewController()
@@ -57,11 +55,9 @@ class NyContactViewController: UIViewController, MFMailComposeViewControllerDele
         
         present(mailVC, animated: true, completion: nil)
         
-
     }
+    
 
-    
-    
     
     @IBAction func evacuationPlan(_ sender: Any) {
 

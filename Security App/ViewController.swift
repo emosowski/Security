@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+    }
 
 
 }

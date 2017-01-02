@@ -13,15 +13,15 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    @IBOutlet weak var dateLabel: UILabel!
+//    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var weatherImage: UIImageView!
+//    @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var weatherLabel: UILabel!
     
     var weather = DataModel()
     
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 2000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,11 +91,11 @@ class newyorkMapViewViewController: UIViewController, MKMapViewDelegate {
     }
     
     func updateUI() {
-        dateLabel.text = weather.date
+//        dateLabel.text = weather.date
         tempLabel.text = "\(weather.temp)"
         locationLabel.text = weather.location
         weatherLabel.text = weather.weather
-        weatherImage.image = UIImage(named: weather.weather)
+//        weatherImage.image = UIImage(named: weather.weather)
     }
     
     

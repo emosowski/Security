@@ -23,7 +23,7 @@ class DataModel {
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
         let date = Date(timeIntervalSince1970: _date!)
-        return (_date != nil) ? "Today, \(dateFormatter.string(from: date))" : "Date Invalid"
+        return (_date != nil) ? "\(dateFormatter.string(from: date))" : "Date Invalid"
     }
     
     var temp: String {
@@ -48,7 +48,7 @@ class DataModel {
                 
                 self._temp = String(format: "%.0f °F", (temp - 273.15) * 1.8 + 32)
                 self._weather = weather
-                self._location = "\(name), \(country)"
+                self._location = "\(name)"
                 self._date = dt
             }
             
