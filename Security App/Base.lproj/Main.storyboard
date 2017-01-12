@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="2352" identifier="iOS"/>
+        <deployment version="2336" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +13,7 @@
         <array key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
-        <array key="VodafoneRg.ttf">
+        <array key="vodafonerg-webfont.ttf">
             <string>VodafoneRg-Regular</string>
         </array>
     </customFonts>
@@ -390,7 +390,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mh8-T6-nN5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cJg-ma-bJa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cJg-ma-bJa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

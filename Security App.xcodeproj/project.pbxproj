@@ -40,6 +40,9 @@
 		6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newyorkMapViewViewController.swift; sourceTree = "<group>"; };
 		6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NyContactViewController.swift; sourceTree = "<group>"; };
 		6806C1421DF9CBCC0083CF4E /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		68611B4B1E27CC15002C2583 /* Security App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Security App.entitlements"; sourceTree = "<group>"; };
+		686F954F1E256DBF00D04ED6 /* Security App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Security App-Bridging-Header.h"; sourceTree = "<group>"; };
+		686F95521E257A9B00D04ED6 /* Security App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Security App-Bridging-Header.h"; sourceTree = "<group>"; };
 		688AB9091DFB38D3009A9813 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = ../Location.swift; sourceTree = "<group>"; };
 		688AB90F1DFF1B05009A9813 /* EvacuationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvacuationController.swift; sourceTree = "<group>"; };
 		688AB9111DFF3C77009A9813 /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 		A1D2FBEE1DD2206400F6BE9B /* Security App */ = {
 			isa = PBXGroup;
 			children = (
+				68611B4B1E27CC15002C2583 /* Security App.entitlements */,
 				A1D2FC131DD26C7300F6BE9B /* Resources */,
 				A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */,
 				A1D2FBF11DD2206400F6BE9B /* ViewController.swift */,
@@ -130,6 +134,8 @@
 				A1D2FBF81DD2206400F6BE9B /* LaunchScreen.storyboard */,
 				A1D2FBFB1DD2206400F6BE9B /* Info.plist */,
 				A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */,
+				686F954F1E256DBF00D04ED6 /* Security App-Bridging-Header.h */,
+				686F95521E257A9B00D04ED6 /* Security App-Bridging-Header.h */,
 			);
 			path = "Security App";
 			sourceTree = "<group>";
@@ -185,8 +191,14 @@
 				TargetAttributes = {
 					A1D2FBEB1DD2206400F6BE9B = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = K2L4T5WD2L;
-						LastSwiftMigration = 0810;
+						DevelopmentTeam = RLU88ZA8D2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -356,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -395,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -407,14 +419,20 @@
 			baseConfigurationReference = 106A7D28F6CE9767BA040FAA /* Pods-Security App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Security App/Security App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K2L4T5WD2L;
+				DEVELOPMENT_TEAM = RLU88ZA8D2;
 				INFOPLIST_FILE = "Security App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App2";
+				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,14 +442,18 @@
 			baseConfigurationReference = 1DA4DF8C6687AAE79036CF3C /* Pods-Security App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Security App/Security App.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K2L4T5WD2L;
+				DEVELOPMENT_TEAM = RLU88ZA8D2;
 				INFOPLIST_FILE = "Security App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App2";
+				PRODUCT_BUNDLE_IDENTIFIER = "emilyosowski.Security-App7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

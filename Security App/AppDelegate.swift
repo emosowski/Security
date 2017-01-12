@@ -10,11 +10,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let APP_ID = "D55FE643-9856-08BB-FFC4-163728F3F400"
+    let SECRET_KEY = "1302ECDA-6678-F016-FF86-D01C9E33EC00"
+    let VERSION_NUM = "v1"
+    
+    var backendless = Backendless.sharedInstance()
 
     var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        backendless?.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
+        backendless?.messaging.registerForRemoteNotifications()
         
 //        
         UINavigationBar.appearance().barTintColor = UIColor(red: 0.9, green: 0, blue: 0, alpha: 1)
@@ -23,6 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        backendless?.messaging.registerDeviceToken(deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // handle error
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

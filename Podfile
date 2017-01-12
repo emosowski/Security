@@ -4,4 +4,6 @@ use_frameworks!
 target 'Security App’ do
 
     pod 'Alamofire', '~> 4.0' 
+	
+    pod 'Backendless'
 end
