@@ -13,7 +13,7 @@
         <array key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
-        <array key="vodafonerg-webfont.ttf">
+        <array key="VodafoneRg.ttf">
             <string>VodafoneRg-Regular</string>
         </array>
     </customFonts>
@@ -46,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
                                 <rect key="frame" x="0.0" y="223" width="375" height="94"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="30"/>
-                                <state key="normal" title="Infallible 5">
+                                <state key="normal" title="#mustdo">
                                     <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>

@@ -118,11 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				68611B4B1E27CC15002C2583 /* Security App.entitlements */,
-				A1D2FC131DD26C7300F6BE9B /* Resources */,
 				A1D2FBEF1DD2206400F6BE9B /* AppDelegate.swift */,
 				A1D2FBF11DD2206400F6BE9B /* ViewController.swift */,
-				6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */,
 				6806C1381DF1D46E0083CF4E /* newyorkMapViewViewController.swift */,
+				6806C13A1DF5F7040083CF4E /* NyContactViewController.swift */,
 				A1A7BF511E12FBF200742914 /* DataModel.swift */,
 				688AB9091DFB38D3009A9813 /* Location.swift */,
 				6806C1421DF9CBCC0083CF4E /* VCMapView.swift */,
@@ -136,6 +135,7 @@
 				A1D2FC011DD24F0800F6BE9B /* SecondViewController.swift */,
 				686F954F1E256DBF00D04ED6 /* Security App-Bridging-Header.h */,
 				686F95521E257A9B00D04ED6 /* Security App-Bridging-Header.h */,
+				A1D2FC131DD26C7300F6BE9B /* Resources */,
 			);
 			path = "Security App";
 			sourceTree = "<group>";
@@ -195,6 +195,9 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
