@@ -13,6 +13,8 @@ class ViewController: UIViewController, IBEPushReceiver {
     
     var backendless = Backendless.sharedInstance()
     
+    var i = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,7 +32,48 @@ class ViewController: UIViewController, IBEPushReceiver {
         backendless!.messaging.registerDevice(withChannels: ["testing"])
         backendless!.messaging.pushReceiver = self
         
+
+//        subscribe()
+//        
+//        publishAsync()
+        
     }
+    
+//    func publishAsync() {
+//        
+//        let message = "Message \(self.i+=1)"
+//        backendless?.messaging.publish(
+//            "default", message:message,
+//            response: { ( messageStatus) -> () in
+//                print("Message published (ASYNC) -  \(messageStatus!.messageId)")
+//        },
+//            error: { ( fault : Fault?) -> () in
+//                print("Server reported an error (ASYNC): \(fault)")
+//        }
+//        )
+//    }
+//    
+//    func subscribe() {
+//        
+//        backendless?.messaging.subscribe(
+//            "default",
+//            subscriptionResponse: { ( messages) -> () in
+//                
+//                for message in (messages as [Message]!) {
+//                    print("Received message - \(message.data)")
+//                }
+//        },
+//            subscriptionError: { ( fault : Fault?) -> () in
+//                print("Server reported an error (FAULT): \(fault)")
+//        },
+//            response: { (response) -> () in
+//                print("subscribe -  \(response)")
+//        },
+//            error: { (fault : Fault?) -> () in
+//                print("Server reported an error (SUBSCRIPTION ERROR): \(fault)")
+//        }
+//        )
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -97,6 +140,7 @@ class ViewController: UIViewController, IBEPushReceiver {
     public func didFailToRegisterForRemoteNotificationsWithError(_ err: Error!) {
         print("didFailToRegisterForRemoteNotificationsWithError: \(err)")
     }
+    
 
 }
 

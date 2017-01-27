@@ -80,6 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         completionHandler(.newData)
     }
     
+    
 }
 
 @available(iOS 10, *)
