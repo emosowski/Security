@@ -13,7 +13,7 @@
         <array key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
-        <array key="VodafoneRg.ttf">
+        <array key="vodafonerg-webfont.ttf">
             <string>VodafoneRg-Regular</string>
         </array>
     </customFonts>
@@ -291,7 +291,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38 °F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwg-du-sk8">
-                                <rect key="frame" x="119" y="150" width="201" height="66"/>
+                                <rect key="frame" x="119" y="147" width="201" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="l57-un-Ere"/>
                                 </constraints>
@@ -300,13 +300,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-Mr-J18">
-                                <rect key="frame" x="121" y="79" width="130" height="41"/>
+                                <rect key="frame" x="121" y="79" width="133.5" height="38"/>
                                 <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVY-0t-DGc">
-                                <rect key="frame" x="162" y="117" width="201" height="23"/>
+                                <rect key="frame" x="162" y="117" width="201" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="k8g-fy-U8g"/>
                                 </constraints>
@@ -386,8 +386,15 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A6-lT-FML">
-                                <rect key="frame" x="0.0" y="124" width="375" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-Mu-XeR">
+                                <rect key="frame" x="-1" y="274" width="376" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIx-Vh-Y53">
+                                <rect key="frame" x="0.0" y="366" width="375" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -398,7 +405,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Alerts" id="2YC-f6-8jo"/>
                     <connections>
-                        <outlet property="alertLabel" destination="5A6-lT-FML" id="HJA-eB-gcG"/>
+                        <outlet property="AlertBody" destination="ZIx-Vh-Y53" id="X7v-Cp-WXO"/>
+                        <outlet property="AlertLabel" destination="9FD-Mu-XeR" id="cvS-jz-HSq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EaR-RB-YiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
