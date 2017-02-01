@@ -17,5 +17,6 @@ class Alert : NSObject {
     var ownerId : String?
     var AlertTitle : String?
     var AlertBody : String?
-//    var AlertDate : NSDate?
+    var AlertDate : String?
+
 }

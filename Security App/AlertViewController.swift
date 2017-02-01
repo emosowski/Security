@@ -9,7 +9,7 @@
 
 import UIKit
 
-class AlertViewController: UIViewController {
+class AlertViewController: UIViewController{
     
     /* - production (UserServiceOperation)
      let APP_ID = "1A9E560D-E6EE-DEF9-FF2C-2565B567E800"
@@ -25,9 +25,22 @@ class AlertViewController: UIViewController {
     var backendless = Backendless.sharedInstance()
     
     
-    @IBOutlet weak var AlertLabel: UILabel!
+//    @IBOutlet weak var AlertLabel: UILabel!
     
-    @IBOutlet weak var AlertBody: UILabel!
+    @IBOutlet weak var alertOneDate: UILabel!
+    
+    @IBOutlet weak var alertOneTitle: UILabel!
+    
+    @IBOutlet weak var alertOneBody: UILabel!
+    
+    
+    @IBOutlet weak var alertTwoDate: UILabel!
+    
+    @IBOutlet weak var alertTwoTitle: UILabel!
+    
+    @IBOutlet weak var alertTwoBody: UILabel!
+    
+//    @IBOutlet weak var AlertBody: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,15 +65,19 @@ class AlertViewController: UIViewController {
         Types.tryblock({ () -> Void in
             
             let query = BackendlessDataQuery()
-            let alerts = self.backendless?.persistenceService.of(Alert.ofClass()).find(query)
+            let alerts = (self.backendless?.persistenceService.of(Alert.ofClass()).find(query))! as BackendlessCollection
             
-            let currentPage = alerts?.getCurrentPage()
+            let currentPage = alerts.getCurrentPage()
             print("Loaded \(currentPage?.count) restaurant objects:")
-            print("Total restaurants in the Backendless starage - \(alerts?.totalObjects)")
+            print("Total restaurants in the Backendless starage - \(alerts.totalObjects)")
             for alert in currentPage as! [Alert] {
                 print("Restaurant <\(alert.ofClass())> name = \(alert.AlertTitle), cuisine = \(alert.AlertBody)")
-                self.AlertLabel.text = alert.AlertTitle! as String
-                self.AlertBody.text = alert.AlertBody! as String
+                self.alertOneDate.text = alert.AlertDate! as String
+                self.alertOneTitle.text = alert.AlertTitle! as String
+                self.alertOneBody.text = alert.AlertBody! as String
+//                self.alertTwoDate.text = alert.created! as String
+//                self.alertTwoTitle.text = alert.AlertTitle! as String
+//                self.alertTwoBody.text = alert.AlertBody! as String
             }
         },
                        catchblock: { (exception) -> Void in
@@ -99,6 +116,13 @@ class AlertViewController: UIViewController {
         )
 }
 }
+
+
+
+
+
+
+
 
 //import UIKit
 //
