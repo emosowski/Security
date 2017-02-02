@@ -11,6 +11,12 @@ import UserNotifications
 
 class ViewController: UIViewController, IBEPushReceiver {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+    }
+    
     var backendless = Backendless.sharedInstance()
     
     var i = 0

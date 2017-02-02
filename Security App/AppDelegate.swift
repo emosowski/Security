@@ -22,10 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var backendless = Backendless.sharedInstance()
     
     
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
         
         DebLog.setIsActive(true)
+        
         
         backendless!.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
         //backendless!.hostURL = "http://api.backendless.com"

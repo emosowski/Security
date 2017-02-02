@@ -56,7 +56,16 @@ class NyContactViewController: UIViewController, MFMailComposeViewControllerDele
         present(mailVC, animated: true, completion: nil)
         
     }
-    
+
+    @IBAction func cwtCall(_ sender: Any) {
+        
+        let number = URL(string: "telprompt://8002535095")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(number, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(number)
+        }
+    }
 
     
     @IBAction func evacuationPlan(_ sender: Any) {
