@@ -13,6 +13,9 @@
         <array key="VodafoneExBd.ttf">
             <string>VodafoneExB-Regular</string>
         </array>
+        <array key="VodafoneLt.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
         <array key="VodafoneRgBd.ttf">
             <string>VodafoneRg-Bold</string>
         </array>
@@ -33,40 +36,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
-                                <rect key="frame" x="0.0" y="343" width="371" height="92"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nycdark" translatesAutoresizingMaskIntoConstraints="NO" id="I9n-fO-Esd">
+                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OPE-J9-QfX">
+                                <rect key="frame" x="0.0" y="-88" width="375" height="599"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="q7E-5W-j2r">
+                                <rect key="frame" x="16" y="377" width="343" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bEw-1j-rVh">
+                                <rect key="frame" x="16" y="521" width="343" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="IGU-AJ-gDo"/>
+                                    <constraint firstAttribute="height" constant="128" id="oz4-iH-Iud"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="30"/>
-                                <state key="normal" title="Offices">
-                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-1-rhombus-1" translatesAutoresizingMaskIntoConstraints="NO" id="TRI-IA-8pq">
+                                <rect key="frame" x="-66" y="-176" width="494" height="553"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="553" id="wHc-Oh-9os"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-Tz-TgA">
+                                <rect key="frame" x="10" y="65" width="250" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="inu-aF-Gxg"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-h9-tgS">
-                                <rect key="frame" x="0.0" y="223" width="375" height="94"/>
-                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="30"/>
-                                <state key="normal" title="#mustdo">
-                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="392" width="375" height="94"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="30"/>
+                                <state key="normal" title="#MustDo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="3lP-Ft-iA9" kind="show" id="k5x-ur-IRh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiP-2h-zTK">
+                                <rect key="frame" x="0.0" y="537" width="371" height="92"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="30"/>
+                                <state key="normal" title="Offices">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XIf-oo-Ryu" kind="show" id="cIE-ep-ihD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.086871527135372162" green="0.16449812054634094" blue="0.66212964057922363" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lC3-h9-tgS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="5rA-US-pNV"/>
-                            <constraint firstAttribute="trailing" secondItem="lC3-h9-tgS" secondAttribute="trailing" id="7e9-Gd-Ivm"/>
-                            <constraint firstItem="PiP-2h-zTK" firstAttribute="top" secondItem="lC3-h9-tgS" secondAttribute="bottom" constant="26" id="GVJ-1S-s6N"/>
-                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SU2-9S-Gjh"/>
-                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="PiP-2h-zTK" secondAttribute="leading" id="lwu-5m-kMN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PiP-2h-zTK" secondAttribute="bottom" constant="232" id="tCI-lV-xSE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PiP-2h-zTK" secondAttribute="trailing" constant="-12" id="un4-lC-Rop"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PiP-2h-zTK" secondAttribute="bottom" constant="38" id="1R1-QQ-Yh3"/>
+                            <constraint firstItem="q7E-5W-j2r" firstAttribute="trailing" secondItem="bEw-1j-rVh" secondAttribute="trailing" id="6Ce-1m-Hym"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PiP-2h-zTK" secondAttribute="trailing" constant="-12" id="7Ac-sm-lS8"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="OPE-J9-QfX" secondAttribute="leading" id="7nH-h4-Lne"/>
+                            <constraint firstItem="OPE-J9-QfX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-88" id="7xs-o8-OpX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bEw-1j-rVh" secondAttribute="bottom" constant="18" id="8W2-7C-Itr"/>
+                            <constraint firstItem="bEw-1j-rVh" firstAttribute="top" secondItem="q7E-5W-j2r" secondAttribute="bottom" constant="16" id="CHi-V5-LJ1"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="trailing" secondItem="OPE-J9-QfX" secondAttribute="trailing" id="EZj-5F-d4t"/>
+                            <constraint firstItem="TRI-IA-8pq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-82" id="F96-5I-BcK"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="PiP-2h-zTK" secondAttribute="leading" id="Gev-l1-eRP"/>
+                            <constraint firstItem="Yjc-Tz-TgA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="1" id="HHY-Ce-1Zl"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="trailing" secondItem="I9n-fO-Esd" secondAttribute="trailing" id="HKE-ek-j5X"/>
+                            <constraint firstItem="bEw-1j-rVh" firstAttribute="top" secondItem="lC3-h9-tgS" secondAttribute="bottom" constant="35" id="JkG-pX-zIA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yjc-Tz-TgA" secondAttribute="trailing" constant="99" id="LYd-o3-jjV"/>
+                            <constraint firstItem="bEw-1j-rVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RhR-44-he6"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="I9n-fO-Esd" secondAttribute="leading" id="SXc-p8-Bps"/>
+                            <constraint firstItem="q7E-5W-j2r" firstAttribute="top" secondItem="TRI-IA-8pq" secondAttribute="bottom" id="Vr1-eU-bok"/>
+                            <constraint firstItem="Yjc-Tz-TgA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="Vra-ho-7on"/>
+                            <constraint firstItem="PiP-2h-zTK" firstAttribute="top" secondItem="OPE-J9-QfX" secondAttribute="bottom" constant="26" id="bog-Ic-wqk"/>
+                            <constraint firstItem="TRI-IA-8pq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-176" id="cGH-eW-Fnq"/>
+                            <constraint firstItem="q7E-5W-j2r" firstAttribute="leading" secondItem="bEw-1j-rVh" secondAttribute="leading" id="cXb-h5-7oy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TRI-IA-8pq" secondAttribute="trailing" constant="-69" id="g6K-ra-oBf"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hJE-ov-NEc"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="top" secondItem="TRI-IA-8pq" secondAttribute="bottom" constant="15" id="i9h-TP-7YQ"/>
+                            <constraint firstItem="bEw-1j-rVh" firstAttribute="top" secondItem="OPE-J9-QfX" secondAttribute="bottom" constant="10" id="iAi-lO-EHj"/>
+                            <constraint firstItem="I9n-fO-Esd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="52" id="mXv-Nh-hKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="lC3-h9-tgS" secondAttribute="trailing" id="qRQ-JB-umY"/>
+                            <constraint firstItem="lC3-h9-tgS" firstAttribute="centerX" secondItem="q7E-5W-j2r" secondAttribute="centerX" id="qeU-nY-vBQ"/>
+                            <constraint firstItem="I9n-fO-Esd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uqq-am-kTR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cdp-Cq-gyo"/>
@@ -87,8 +139,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-and-white-city-skyline-buildings" translatesAutoresizingMaskIntoConstraints="NO" id="jMK-xW-SUF">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-and-white-city-skyline-buildings" translatesAutoresizingMaskIntoConstraints="NO" id="jMK-xW-SUF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ij-IN-2DT">
                                 <rect key="frame" x="0.0" y="64" width="375" height="130"/>
@@ -101,7 +154,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9ij-IN-2DT" firstAttribute="top" secondItem="jMK-xW-SUF" secondAttribute="top" id="0X3-xG-kyM"/>
                             <constraint firstItem="jMK-xW-SUF" firstAttribute="leading" secondItem="7kL-oX-m21" secondAttribute="leading" id="Ee5-aJ-u75"/>
@@ -135,8 +188,8 @@
                                 <rect key="frame" x="0.0" y="-90" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="fUF-ti-7FZ">
-                                <rect key="frame" x="67" y="148" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mustdo" translatesAutoresizingMaskIntoConstraints="NO" id="fUF-ti-7FZ">
+                                <rect key="frame" x="55" y="132" width="265" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="9jN-Q1-2fT">
@@ -218,92 +271,93 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-1O-DnZ">
-                                <rect key="frame" x="0.0" y="71" width="375" height="129"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="officestrip" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-1O-DnZ">
+                                <rect key="frame" x="0.0" y="9" width="375" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66302794218063354" green="0.89433223009109497" blue="0.92875027656555176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sy0-R2-oKI">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpperson" translatesAutoresizingMaskIntoConstraints="NO" id="sy0-R2-oKI">
                                 <rect key="frame" x="0.0" y="206" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-UI-sSO">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="help desk" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-UI-sSO">
                                 <rect key="frame" x="-16" y="342" width="391" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxX-Zs-xVu">
-                                <rect key="frame" x="245" y="302" width="61" height="30"/>
+                                <rect key="frame" x="245" y="142" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="phone"/>
+                                <state key="normal" image="phone-1"/>
                                 <connections>
                                     <action selector="helpDeskCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="Xnw-XR-oDg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmH-O2-qQz">
-                                <rect key="frame" x="322" y="303" width="30" height="30"/>
+                                <rect key="frame" x="309" y="280" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Message Filled-30"/>
+                                <state key="normal" image="email"/>
                                 <connections>
                                     <action selector="helpDeskEmail:" destination="WkP-lg-RCy" eventType="touchUpInside" id="EAm-eb-fMR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6J-ig-R20">
-                                <rect key="frame" x="245" y="439" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="phone"/>
-                                <connections>
-                                    <action selector="sosCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="LSC-Fr-5jf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Office" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIW-A7-5eF">
-                                <rect key="frame" x="0.0" y="125" width="375" height="21"/>
+                                <rect key="frame" x="-148" y="158" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help Desk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLz-c1-82s">
-                                <rect key="frame" x="0.0" y="262" width="375" height="21"/>
+                                <rect key="frame" x="-125" y="294" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="InternationalSOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-F5-oqD">
-                                <rect key="frame" x="0.0" y="400" width="375" height="21"/>
+                                <rect key="frame" x="-86" y="431" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-W2-3Yp">
-                                <rect key="frame" x="248" y="151" width="44" height="54"/>
+                                <rect key="frame" x="245" y="280" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="phone"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="phone-1"/>
                                 <connections>
                                     <action selector="officeCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="3VW-CK-Mxc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X0V-8c-zIK">
+                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wing" translatesAutoresizingMaskIntoConstraints="NO" id="X0V-8c-zIK">
                                 <rect key="frame" x="0.0" y="478" width="375" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CWT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-oz-MpP">
-                                <rect key="frame" x="0.0" y="536" width="375" height="27"/>
+                                <rect key="frame" x="-158" y="564" width="375" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9G-TS-3jh">
-                                <rect key="frame" x="255" y="575" width="61" height="30"/>
+                                <rect key="frame" x="245" y="554" width="51" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="phone"/>
+                                <state key="normal" image="phone-1"/>
                                 <connections>
                                     <action selector="cwtCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="UdI-tB-z1Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6J-ig-R20">
+                                <rect key="frame" x="245" y="417" width="51" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="phone-1"/>
+                                <connections>
+                                    <action selector="sosCall:" destination="WkP-lg-RCy" eventType="touchUpInside" id="LSC-Fr-5jf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,6 +381,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvj-jk-tP1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-Xb-dmw">
                                 <rect key="frame" x="166" y="495" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -377,11 +436,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-1-rhombus-1" translatesAutoresizingMaskIntoConstraints="NO" id="2UR-Ds-W06">
-                                <rect key="frame" x="78" y="13" width="297" height="274"/>
+                                <rect key="frame" x="-144" y="-157" width="519" height="452"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alerts" image="Envelope1" selectedImage="Envelope1" id="U5F-mS-zlo"/>
                     <connections>
@@ -493,36 +552,36 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ku0-V3-X0v">
                                 <rect key="frame" x="0.0" y="242" width="375" height="375"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="375" id="0hg-fb-tk7"/>
+                                    <constraint firstAttribute="height" constant="375" id="0yf-8U-eOi"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="lpW-s2-X1c" id="yEO-81-GhR"/>
                                 </connections>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-and-white-city-skyline-buildings" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-cw-Ff9">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nycpopup" translatesAutoresizingMaskIntoConstraints="NO" id="Tbr-cw-Ff9">
                                 <rect key="frame" x="0.0" y="64" width="375" height="180"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38 °F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwg-du-sk8">
-                                <rect key="frame" x="119" y="147" width="201" height="69"/>
+                                <rect key="frame" x="208" y="118" width="201" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="201" id="l57-un-Ere"/>
+                                    <constraint firstAttribute="width" constant="201" id="KFc-05-Qev"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="62"/>
+                                <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="62"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-Mr-J18">
-                                <rect key="frame" x="121" y="79" width="134" height="38"/>
-                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="36"/>
+                                <rect key="frame" x="31" y="120" width="147" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7GQ-df-rAd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="VodafoneExB-Regular" family="Vodafone ExB" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVY-0t-DGc">
-                                <rect key="frame" x="162" y="117" width="201" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="201" id="k8g-fy-U8g"/>
-                                </constraints>
+                                <rect key="frame" x="82" y="161" width="201" height="22"/>
                                 <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -530,21 +589,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mwg-du-sk8" firstAttribute="top" secondItem="N3W-Mr-J18" secondAttribute="bottom" constant="30" id="2Uf-Yl-e2c"/>
-                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="leading" secondItem="Tbr-cw-Ff9" secondAttribute="leading" id="4yw-61-yiC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CVY-0t-DGc" secondAttribute="trailing" constant="-4" id="5Uz-Kx-TYj"/>
-                            <constraint firstItem="N3W-Mr-J18" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leading" constant="121" id="B5B-nC-aE7"/>
-                            <constraint firstItem="Tbr-cw-Ff9" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" id="DLL-O8-fkZ"/>
-                            <constraint firstItem="CVY-0t-DGc" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" constant="53" id="O9c-Yq-vrk"/>
-                            <constraint firstItem="Prc-7w-cb3" firstAttribute="top" secondItem="Ku0-V3-X0v" secondAttribute="bottom" constant="1" id="TT5-mm-oSV"/>
-                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leading" id="Y4G-7o-MfT"/>
-                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="trailing" secondItem="Tbr-cw-Ff9" secondAttribute="trailing" id="YH5-iK-c6P"/>
-                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="top" secondItem="Mwg-du-sk8" secondAttribute="bottom" constant="26" id="e3j-7z-ZgR"/>
-                            <constraint firstAttribute="trailing" secondItem="Ku0-V3-X0v" secondAttribute="trailing" id="tlj-Dt-mfe"/>
-                            <constraint firstItem="N3W-Mr-J18" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" constant="15" id="tlr-aa-I8x"/>
-                            <constraint firstItem="Prc-7w-cb3" firstAttribute="top" secondItem="Tbr-cw-Ff9" secondAttribute="bottom" constant="374" id="tp8-Pd-dss"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mwg-du-sk8" secondAttribute="trailing" constant="39" id="vYA-fK-HeP"/>
-                            <constraint firstItem="Mwg-du-sk8" firstAttribute="top" secondItem="CVY-0t-DGc" secondAttribute="bottom" constant="10" id="wsT-7F-9OL"/>
+                            <constraint firstAttribute="trailing" secondItem="Ku0-V3-X0v" secondAttribute="trailing" id="2eP-7S-oyg"/>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="trailing" secondItem="Tbr-cw-Ff9" secondAttribute="trailing" id="6bY-jP-ZYb"/>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="top" secondItem="Mwg-du-sk8" secondAttribute="bottom" constant="57" id="HAr-ax-grZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVY-0t-DGc" secondAttribute="trailing" constant="76" id="J6r-bg-QTX"/>
+                            <constraint firstItem="Tbr-cw-Ff9" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" id="LLE-zn-rCJ"/>
+                            <constraint firstItem="N3W-Mr-J18" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" constant="56" id="LRG-Hr-e8h"/>
+                            <constraint firstItem="CVY-0t-DGc" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leadingMargin" constant="66" id="Tvq-cm-TKZ"/>
+                            <constraint firstItem="N3W-Mr-J18" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leadingMargin" constant="15" id="VJw-8b-vcr"/>
+                            <constraint firstItem="Mwg-du-sk8" firstAttribute="top" secondItem="X0X-Ut-NWq" secondAttribute="bottom" constant="54" id="W6X-Zf-Ddt"/>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="leading" secondItem="Teo-cN-Adp" secondAttribute="leading" id="XM3-D1-JKO"/>
+                            <constraint firstItem="Prc-7w-cb3" firstAttribute="top" secondItem="Tbr-cw-Ff9" secondAttribute="bottom" constant="374" id="Xtz-dt-jGT"/>
+                            <constraint firstItem="CVY-0t-DGc" firstAttribute="top" secondItem="N3W-Mr-J18" secondAttribute="bottom" constant="1" id="ahG-82-ZL3"/>
+                            <constraint firstItem="Ku0-V3-X0v" firstAttribute="leading" secondItem="Tbr-cw-Ff9" secondAttribute="leading" id="c3I-D6-Vpg"/>
+                            <constraint firstItem="Mwg-du-sk8" firstAttribute="leading" secondItem="N3W-Mr-J18" secondAttribute="trailing" constant="30" id="fAU-HT-xR1"/>
+                            <constraint firstItem="Prc-7w-cb3" firstAttribute="top" secondItem="Ku0-V3-X0v" secondAttribute="bottom" constant="1" id="gqB-n9-08U"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="Location" selectedImage="Location" id="2SO-kL-OQh"/>
@@ -639,13 +698,21 @@
         <image name="5-1" width="32" height="32"/>
         <image name="Envelope1" width="31" height="31"/>
         <image name="Location" width="13" height="31"/>
-        <image name="Message Filled-30" width="30" height="30"/>
+        <image name="Rectangle" width="952" height="345"/>
         <image name="bg-1-rhombus-1" width="764" height="600"/>
         <image name="bg-6" width="764" height="600"/>
         <image name="black-and-white-city-skyline-buildings" width="2560" height="1440"/>
+        <image name="email" width="64" height="60"/>
+        <image name="help desk" width="3680" height="1227"/>
+        <image name="helpperson" width="3644" height="1227"/>
         <image name="ice" width="32" height="32"/>
-        <image name="phone" width="30" height="30"/>
+        <image name="mustdo" width="338" height="257"/>
+        <image name="nycdark" width="1944" height="921"/>
+        <image name="nycpopup" width="1944" height="921"/>
+        <image name="officestrip" width="3680" height="2456"/>
+        <image name="phone-1" width="64" height="60"/>
         <image name="title" width="446" height="187"/>
         <image name="upin" width="14" height="28"/>
+        <image name="wing" width="3680" height="1227"/>
     </resources>
 </document>

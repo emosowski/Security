@@ -25,6 +25,7 @@ class ViewController: UIViewController, IBEPushReceiver {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
             center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
@@ -44,6 +45,8 @@ class ViewController: UIViewController, IBEPushReceiver {
 //        publishAsync()
         
     }
+    
+ 
     
 //    func publishAsync() {
 //        
